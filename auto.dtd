@@ -1,0 +1,39 @@
+<!--
+Travail TP1 numero 3
+IFT-1152
+Karl Rushford
+code permanent RUSK28078403
+matricule 20002954
+remise le 13 fevrier 2018
+-->
+
+
+
+<!ELEMENT automobiles (fabricants+)>
+<!ELEMENT fabricants (modele+)>
+<!ELEMENT modele (options_list*, sous-modele+)>
+
+
+<!ELEMENT options_list (code, prix_opt, description)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT prix_opt (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT sous-modele (nb_portes, couleur_dispo, prix_car, options_dispo, groupes_moteurs*)>
+<!ELEMENT nb_portes (#PCDATA) >
+<!ELEMENT couleur_dispo (couleur*) >
+<!ELEMENT couleur (#PCDATA) >
+<!ELEMENT prix_car (#PCDATA) >
+<!ELEMENT options_dispo (options*) >
+<!ELEMENT options (#PCDATA) >
+<!ELEMENT groupes_moteurs (nb_cylindres, nb_litres, puissance, prix_sup) >
+
+<!ELEMENT nb_cylindres (#PCDATA) >
+<!ELEMENT nb_litres (#PCDATA) >
+<!ELEMENT puissance (#PCDATA) >
+<!ELEMENT prix_sup (#PCDATA) >
+
+<!ATTLIST fabricants nom_fab CDATA #REQUIRED >
+<!ATTLIST modele nom_mod CDATA #REQUIRED >
+<!ATTLIST sous-modele nom_sm CDATA #REQUIRED >
+<!ATTLIST groupes_moteurs essence_type (ordinaire|super|diesel) #REQUIRED>

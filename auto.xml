@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+Travail TP1 numero 3
+IFT-1152
+Karl Rushford
+code permanent RUSK28078403
+remise le 13 fevrier 2018
+
+-->
+
+<!DOCTYPE automobiles SYSTEM "auto.dtd">
+
+
+<automobiles>
+	<fabricants nom_fab="Ford">
+		<modele nom_mod="Focus">
+		
+			<!-- liste des options disponible pour le modele Focus -->	
+			<options_list>
+				<code>27A</code>
+				<prix_opt>800$</prix_opt>
+				<description>vitres électriques et sièges électriques 8 positions </description>
+			</options_list>
+			<options_list>
+				<code>27F</code>
+				<prix_opt>1200$</prix_opt>
+				<description>roues magnésium et toit ouvrant</description>
+			</options_list>			
+			<options_list>
+				<code>26B</code>
+				<prix_opt>400$</prix_opt>
+				<description>groupe éclairage de luxe</description>
+			</options_list>		
+			
+			<!-- debut des sous-modeles pour le modele Focus -->
+			<sous-modele nom_sm="LS">
+				<nb_portes>4</nb_portes>
+				
+				<!-- liste des couleur dispo pour le sous modele LS -->
+				<couleur_dispo>
+					<couleur>blanc</couleur>
+					<couleur>noir</couleur>
+					<couleur>rouge</couleur>
+					<couleur>bleu</couleur>
+				</couleur_dispo>
+				
+				<prix_car>19 999$</prix_car>
+				
+				<!-- liste des options disponibles pour le sous modele LS-->
+				<options_dispo>
+					<options>27A</options>
+					<options>27F</options>
+				</options_dispo>
+
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="ordinaire">
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.8 Litres</nb_litres>
+					<puissance>105 cheveaux</puissance>
+					<prix_sup>0$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteur 2 -->
+				<groupes_moteurs essence_type="super">
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>145 cheveaux</puissance>
+					<prix_sup>1300$</prix_sup>
+				</groupes_moteurs>
+			</sous-modele>
+			
+			<sous-modele nom_sm="EX">
+				<nb_portes>5</nb_portes>
+				
+				<!-- liste des couleurs disponibles pour le sous modele EX-->
+				<couleur_dispo>
+					<couleur>blanc</couleur>
+					<couleur>noir</couleur>
+					<couleur>rouge</couleur>
+					<couleur>bleu</couleur>
+				</couleur_dispo>
+				
+				<prix_car>21 995$</prix_car>
+				
+				<!-- liste des options disponibles pour le sous modele EX-->
+				<options_dispo>
+					<options>27A</options>
+					<options>27F</options>
+					<options>26B</options>
+				</options_dispo>
+			
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="ordinaire">
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.8 Litres</nb_litres>
+					<puissance>105 cheveaux</puissance>
+					<prix_sup>0$</prix_sup>
+				</groupes_moteurs>
+			
+				<!-- liste des options du groupes moteurs 2 -->
+				<groupes_moteurs essence_type="super">
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>145 cheveaux</puissance>
+					<prix_sup>1300$</prix_sup>
+				</groupes_moteurs>
+			</sous-modele >
+			
+			<sous-modele nom_sm="GS">
+				<nb_portes>5</nb_portes>
+				
+				<!-- liste des couleurs disponibles pour le sous modele GS-->
+				<couleur_dispo>
+					<couleur>noir</couleur>
+					<couleur>rouge</couleur>
+				</couleur_dispo>
+			
+				<prix_car>28 995$</prix_car>
+				
+				<!-- liste des options disponibles pour le sous modele GS (aucune option pour ce modele) -->
+				<options_dispo>
+					<options>Aucune pour ce modèle</options>
+				</options_dispo>
+				
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="super">
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>145 cheveaux</puissance>
+					<prix_sup>0$</prix_sup>
+				</groupes_moteurs>
+			
+				<!-- liste des options du groupes moteurs 2 -->
+				<groupes_moteurs essence_type="super">
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>3.7 Litres</nb_litres>
+					<puissance>250 cheveaux</puissance>
+					<prix_sup>2400$</prix_sup>
+				</groupes_moteurs>
+				
+			</sous-modele>
+		</modele> <!-- fin du modele Focus -->
+	</fabricants> <!-- fin du fabricant Ford -->
+	
+	<fabricants nom_fab="VW">
+		<modele nom_mod="Jetta">
+			<!-- liste des options disponible pour le modele  Jetta -->	
+			<options_list>
+				<code>27A</code>
+				<prix_opt>1800$</prix_opt>
+				<description>air climatisé et sièges chauffants </description>
+			</options_list>
+			<options_list>
+				<code>27F</code>
+				<prix_opt>1200$</prix_opt>
+				<description>roues magnésium et toit ouvrant</description>
+			</options_list>
+			<options_list>
+				<code>26B</code>
+				<prix_opt>400$</prix_opt>
+				<description>groupe éclairage de luxe</description>
+			</options_list>
+			
+			<!-- debut des sous-modeles pour le modele Jetta -->
+			<sous-modele nom_sm="GS">
+				<nb_portes>4</nb_portes>
+				
+				<!-- liste des couleurs disponibles pour le sous modele GS-->
+				<couleur_dispo>
+					<couleur>blanc</couleur>
+					<couleur>noir</couleur>
+					<couleur>rouge</couleur>
+					<couleur>bleu</couleur>
+				</couleur_dispo>
+				
+				<prix_car>21 995$</prix_car>
+				
+				<!-- liste des options disponibles pour le sous modele GS -->
+				<options_dispo>
+					<options>27A</options>
+					<options>27F</options>
+				</options_dispo>
+
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="ordinaire">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.8 Litres</nb_litres>
+					<puissance>105 cheveaux</puissance>
+					<prix_sup>0$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 2 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.7 Litres Turbo</nb_litres>
+					<puissance>170 cheveaux</puissance>
+					<prix_sup>2350$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 3 -->
+				<groupes_moteurs essence_type="diesel">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.9 Litres</nb_litres>
+					<puissance>110 cheveaux</puissance>
+					<prix_sup>1800$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 4 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>245 cheveaux</puissance>
+					<prix_sup>4300$</prix_sup>
+				</groupes_moteurs>
+				
+			</sous-modele>
+			
+			<sous-modele nom_sm="GX">
+				<nb_portes>4</nb_portes>
+				
+				<!-- liste des couleurs disponibles pour le sous modele GX-->
+				<couleur_dispo>
+					<couleur>blanc</couleur>
+					<couleur>noir</couleur>
+					<couleur>roues</couleur>
+					<couleur>bleu</couleur>
+				</couleur_dispo>
+				
+				<prix_car>21 995$</prix_car>
+				
+					<!-- liste des options disponibles pour le sous modele GX -->
+				<options_dispo>
+					<options>27A</options>
+					<options>27F</options>
+					<options>26B</options>
+				</options_dispo>			
+				
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="ordinaire">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.8 Litres</nb_litres>
+					<puissance>105 cheveaux</puissance>
+					<prix_sup>0$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 2 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.7 Litres</nb_litres>
+					<puissance>170 cheveaux</puissance>
+					<prix_sup>2350$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 3 -->
+				<groupes_moteurs essence_type="diesel">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.9 Litres Turbo</nb_litres>
+					<puissance>110 cheveaux</puissance>
+					<prix_sup>1800$</prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 4 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>245 cheveaux</puissance>
+					<prix_sup>4300$</prix_sup>
+				</groupes_moteurs>
+				
+			</sous-modele>
+			
+			<sous-modele nom_sm="GX Familiale">
+				<nb_portes>5</nb_portes>
+				
+				<!-- liste des couleurs disponibles pour le sous modele GX Familiale-->
+				<couleur_dispo>
+					<couleur>noir</couleur>
+					<couleur>rouge</couleur>
+				</couleur_dispo>
+				
+				<prix_car>28 995$</prix_car>
+				
+					<!-- liste des options disponibles pour le sous modele GX Familiale -->
+				<options_dispo>
+					<options>Aucune option pour ce modèle</options>
+				</options_dispo>
+				
+				<!-- liste des options du groupes moteurs 1 -->
+				<groupes_moteurs essence_type="ordinaire">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.8 Litres</nb_litres>
+					<puissance>105 cheveaux</puissance>
+					<prix_sup></prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 2 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.7 Litres Turbo</nb_litres>
+					<puissance>170 cheveaux</puissance>
+					<prix_sup></prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 3 -->
+				<groupes_moteurs essence_type="diesel">	
+					<nb_cylindres>4 cyl</nb_cylindres>
+					<nb_litres>1.9 Litres</nb_litres>
+					<puissance>110 cheveaux</puissance>
+					<prix_sup></prix_sup>
+				</groupes_moteurs>
+				
+				<!-- liste des options du groupes moteurs 4 -->
+				<groupes_moteurs essence_type="super">	
+					<nb_cylindres>6 cyl</nb_cylindres>
+					<nb_litres>2.8 Litres</nb_litres>
+					<puissance>245 cheveaux</puissance>
+					<prix_sup></prix_sup>
+				</groupes_moteurs>
+				
+			</sous-modele>
+		</modele> <!-- fin du modele Jetta -->
+	</fabricants> <!-- fin du fabricant VW -->
+</automobiles> <!-- fun de automobiles -->
+
+
+
+<!--
+
+
+			
+-->
